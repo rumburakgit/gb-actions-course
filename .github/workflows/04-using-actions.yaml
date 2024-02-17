@@ -1,6 +1,6 @@
 name: 04 - Using Actions
 
-on: workflow_dispatch
+on: push
 
 jobs:
   build:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+      - name: Print Folder
+        run: ls
 
 #      - name: Setup Node
 #        uses: actions/setup-node@v4
