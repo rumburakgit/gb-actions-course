@@ -13,7 +13,7 @@ jobs:
         run: ls
       - name: Print Folder
         run: | 
-          cd ../04-using-actions
+          cd ./04-using-actions
           ls
 
 #      - name: Setup Node
