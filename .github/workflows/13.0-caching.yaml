@@ -1,4 +1,4 @@
-name: 13 - Using Caching
+name: 13 - Using Caching 01
 
 on:
   workflow_dispatch:
@@ -7,6 +7,14 @@ on:
         description: Whether to execute cache step
         type: boolean
         default: true
+      node-version:
+        description: Node version
+        type: choice
+        options:
+            - 18.x
+            - 20.x
+            - 21.x
+        default: 20.x
 
 jobs:
   build:
