@@ -13,7 +13,6 @@ async function run() {
   const workingDir = core.getInput('working-directory');
   const debug = core.getBooleanInput('debug');
 
-  core.setSecret(ghToken);
 
   if (!validateBranchName({ branchName: baseBranch })) {
     core.setFailed(
