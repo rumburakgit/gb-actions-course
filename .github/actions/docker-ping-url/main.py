@@ -35,7 +35,7 @@ def run():
 
     website_reachable = ping_url(website_url, delay, max_trials)
 
-    #set_output(os.getenv('GITHUB_OUTPUT'), 'url-reachable', website_reachable)
+    set_output(os.getenv('GITHUB_OUTPUT'), 'url-reachable', website_reachable)
     
     if not website_reachable:
         raise Exception(f"Website {website_url} is malformed or unreachable.")
